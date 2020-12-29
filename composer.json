@@ -1,7 +1,7 @@
 {
-  "name": "impresscms/theme-core",
+  "name": "impresscms/core-theme",
   "type": "impresscms-theme",
-  "license": "GPLv2",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Rene Sato",
