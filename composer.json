@@ -8,7 +8,10 @@
       "email": "info@impresscms.org"
     }
   ],
-  "require": {},
+  "require": {
+    "imponeer/smarty-includeq": "^1.0",
+    "imponeer/smarty-xo": "^1.0"
+  },
   "extra": {
     "name": "core",
     "screenshots": {
