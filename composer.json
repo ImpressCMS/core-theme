@@ -2,6 +2,7 @@
   "name": "impresscms/core-theme",
   "type": "impresscms-theme",
   "license": "GPL-2.0-or-later",
+  "description": "One of basic themes that where designed for ImpressCMS",
   "authors": [
     {
       "name": "Rene Sato",
