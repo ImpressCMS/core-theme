@@ -23,6 +23,8 @@ jobs:
           - mariadb:10.1
         composer_version:
           - 2
+        impresscms_version:
+          - dev-TNG
 
     services:
       mysql:
@@ -34,13 +36,13 @@ jobs:
           - 3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
-    name: Test - impresscms; php:${{ matrix.php_version }}; ${{ matrix.database }}; ${{ matrix.os }}; composer:${{ matrix.composer_version }};
+    name: Test - impresscms:${{ matrix.impresscms_version }}; php:${{ matrix.php_version }}; ${{ matrix.database }}; ${{ matrix.os }}; composer:${{ matrix.composer_version }};
     steps:
       - name: Checkouting project code...
         uses: actions/checkout@v4
 
       - name: Testing addon...
-        uses: impresscms-dev/test-impresscms-addon-action@v0.3
+        uses: impresscms-dev/test-impresscms-addon-action@v0.2
         with:
           php_version: ${{ matrix.php_version }}
           composer_version: ${{ matrix.composer_version }}
