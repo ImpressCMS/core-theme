@@ -45,6 +45,7 @@ jobs:
         uses: impresscms-dev/test-impresscms-addon-action@v0.2
         with:
           php_version: ${{ matrix.php_version }}
+          impresscms_version: ${{ matrix.impresscms_version }}
           composer_version: ${{ matrix.composer_version }}
           database_type: pdo.mysql
           database_name: icms
