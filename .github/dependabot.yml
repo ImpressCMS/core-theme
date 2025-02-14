@@ -5,6 +5,7 @@ version: 2
 updates:
   - package-ecosystem: "composer"
     directory: "/"
+    open-pull-requests-limit: 20
     schedule:
       interval: "weekly"
       time: "11:00"
@@ -14,6 +15,7 @@ updates:
     versioning-strategy: lockfile-only
   - package-ecosystem: "github-actions"
     directory: "/"
+    open-pull-requests-limit: 20
     schedule:
       interval: "weekly"
       time: "11:00"
